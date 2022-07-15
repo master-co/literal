@@ -4,12 +4,6 @@
         "README*",
         "LICENSE*"
     ],
-    "cdns": [
-        {
-            "name": "jsdelivr",
-            "href": "https://www.jsdelivr.com/package/npm/{{ package.name }}"
-        }
-    ],
     "badges": [
         {
             "alt": "MIT License",

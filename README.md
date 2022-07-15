@@ -30,11 +30,6 @@
 ```sh
 npm install @master/literal
 ```
-Or use a CDN
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/@master/literal"></script>
-```
 
 # Import
 ```js
