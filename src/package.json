@@ -1,6 +1,6 @@
 {
     "name": "@master/literal",
-    "description": "Conditionally construct class names with template literals.",
+    "description": "Conditionally construct class names and strings with template literals.",
     "author": "Aoyue Design LLC.",
     "funding": "https://opencollective.com/master-co",
     "license": "MIT",
