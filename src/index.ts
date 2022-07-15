@@ -1,7 +1,4 @@
-type baseType = string | number | Record<string, boolean>;
-type baseLoopType = baseType | Array<baseType>;
-
-function $(defaultClassNames: TemplateStringsArray, ...params: baseLoopType[]) {
+function $(defaultClassNames: TemplateStringsArray, ...params: any[]) {
     let newClassName = '';
     for (let i = 0; i < defaultClassNames.length; i++) {
         newClassName += defaultClassNames[i];
