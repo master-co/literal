@@ -9,7 +9,7 @@
 </p>
 <p align="center"><!-- package.description -->Conditionally construct class names and strings with template literals.<!----></p>
 <p align="center">
-<!-- badges.map((badge) => `[![${badge.alt}](${badge.src})](${badge.href})`).join('&nbsp;')-->
+<!-- badges.map((badge) => `\n[![${badge.alt}](${badge.src})](${badge.href})`).join('&nbsp;')-->
 <!-- -->
 </p>
 </div>
