@@ -23,14 +23,11 @@
 </p>
 </div>
 
-On this page
-- [Quick Start](#quick-start)
-  - [1. Download](#1-download)
-  - [2. Import into your js file](#2-import-into-your-js-file)
+###### On this page
+- [Install](#install)
+- [Import](#import)
 
-# Quick Start
-
-## 1. Download
+# Install
 ```sh
 npm install @master/literal
 ```
@@ -42,7 +39,10 @@ Or use a CDN
 ```
 <!-- -->
 
-## 2. Import into your js file
-```css
-@import '@master/literal';
+# Import
+```js
+import $ from '@master/literal';
+// or
+import { literal } from '@master/literal';
 ```
+`$` is equal to `literal`
