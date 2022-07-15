@@ -51,5 +51,9 @@
             "href": "https://circleci.com/gh/{{ github.name }}/workflows/{{ name }}/tree/main",
             "src": "https://flat.badgen.net/github/status/{{ github.name }}/{{ name }}/main/ci/circleci?icon=circleci"
         }
-    ]
+    ],
+    "name": "literal",
+    "github": {
+        "name": "master-co"
+    }
 }

@@ -5,7 +5,7 @@
     <img src="https://raw.githubusercontent.com/master-co/package/document/images/logo-and-text.svg" alt="logo" width="142">
 </p>
 <p align="center">
-    <b><!-- name --><!-- --></b>
+    <b><!-- name -->literal<!-- --></b>
 </p>
 <p align="center"><!-- package.description --><!-- --></p>
 <p align="center">
@@ -23,7 +23,7 @@ On this page
 
 ## 1. Download
 ```sh
-npm install {{ package.name }}
+npm install @master/literal
 ```
 Or use a CDN
 
@@ -32,5 +32,5 @@ Or use a CDN
 
 ## 2. Import into your js file
 ```css
-@import '{{ package.name }}';
+@import '@master/literal';
 ```
