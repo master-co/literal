@@ -14,6 +14,7 @@
 </div>
 
 ###### On this page
+- [Install](#install)
 - [Import](#import)
 - [Usage](#usage)
   - [Strings](#strings)
@@ -31,11 +32,9 @@ npm install @master/literal
 ```
 Or use a CDN
 
-<!-- cdns.map((cdn) => ````html\n<script src="${cdn.href}"></script>\n```).join('') -->
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@master/literal"></script>
 ```
-<!-- -->
 
 # Import
 ```js
