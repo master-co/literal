@@ -14,6 +14,11 @@ test('Arrays', () => {
     expect($`a ${['b', 0, false, 'c']} d`).toBe('a b c d');
 });
 
+test('Resolve types', () => {
+    expect($`a ${true} ${false} ${''} ${null} ${undefined} ${0} ${NaN} b`)
+        .toBe('a b');
+});
+
 test('Trim and clear', () => {
     expect($`
     a
@@ -26,13 +31,12 @@ test('Trim and clear', () => {
 test('Mixed and nested', () => {
     expect($`
     a
-    ${
-        [
+    ${[
             1 && 'b',
             { c: false, d: null },
             ['e', ['f']]
         ]
-    }
+        }
     g    h
 `).toBe('a b e f g h');
 });
