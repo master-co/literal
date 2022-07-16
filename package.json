@@ -4,7 +4,8 @@
         "build": "npm i --production && cd src && npm i && cd .. && webpack --config webpack.prod.js",
         "serve": "cd src && npm i && cd .. && npm i && webpack serve --config webpack.dev.js",
         "start": "cd src && npm i && cd .. && npm i && webpack serve --config webpack.dev.js --open",
-        "update:readme": "m package render README.md"
+        "update:readme": "m package render README.md",
+        "test": "jest"
     },
     "dependencies": {
         "@babel/core": "^7.16.0",
@@ -29,7 +30,10 @@
     },
     "devDependencies": {
         "@master/cli": "^1.0.0-alpha.22",
+        "@types/jest": "^28.1.6",
         "html-webpack-plugin": "^5.5.0",
+        "jest": "^28.1.3",
+        "ts-jest": "^28.0.6",
         "webpack-dev-server": "^4.6.0"
     },
     "files": [

@@ -19,3 +19,5 @@ ${
 g    h
 `)
 console.log($`a b ${['c', 'd']} ${{ e: true, f: false }} ${true && 'g'}`)
+console.log($('a b', ['c', 'd'], { e: true, f: false }, true && 'g'));
+console.log($(['c', 0, false, 'd']))
