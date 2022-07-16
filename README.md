@@ -49,6 +49,7 @@ import { literal } from '@master/literal';
 `$` is equal to `literal`
 
 # Usage and behavior
+Try it online at https://stackblitz.com/edit/js-5jtq81
 
 ## Strings
 ```js
