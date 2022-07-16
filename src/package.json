@@ -10,5 +10,14 @@
         "type": "git",
         "url": "https://github.com/master-co/literal.git"
     },
-    "types": "index.d.ts"
+    "types": "index.d.ts",
+    "keywords": [
+        "class",
+        "trim",
+        "strings",
+        "sentence",
+        "classnames",
+        "oneline",
+        "templateliterals"
+    ]
 }

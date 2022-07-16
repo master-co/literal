@@ -24,10 +24,11 @@
 ###### On this page
 - [Install](#install)
 - [Import](#import)
-- [Usage](#usage)
+- [Usage and behavior](#usage-and-behavior)
   - [Strings](#strings)
   - [Objects](#objects)
   - [Arrays](#arrays)
+  - [Resolve types](#resolve-types)
   - [Trim and clear](#trim-and-clear)
   - [Mixed and nested](#mixed-and-nested)
   - [Execute like a function](#execute-like-a-function)
@@ -47,24 +48,30 @@ import { literal } from '@master/literal';
 ```
 `$` is equal to `literal`
 
-# Usage
+# Usage and behavior
 
 ## Strings
 ```js
 $`a ${true && 'b'} c`;
-/* 'a b c' */
+// 'a b c'
 ```
 
 ## Objects
 ```js
 $`a ${{ b: true, c: false, d: isTrue() }} e`;
-/* 'a b d e' */
+// 'a b d e'
 ```
 
 ## Arrays
 ```js
 $`a ${['b', 0, false, 'c']} d`;
-/* 'a b c d' */
+// 'a b c d'
+```
+
+## Resolve types
+```js
+$`a ${true} ${false} ${''} ${null} ${undefined} ${0} ${NaN} b`
+// 'a b'
 ```
 
 ## Trim and clear
@@ -77,7 +84,7 @@ $`
     ${undefined}
     c    d
 `
-/* 'a b c d' */
+// 'a b c d'
 ```
 
 ## Mixed and nested
@@ -93,7 +100,7 @@ $`
     }
     g    h
 `;
-/* 'a b e f g h' */
+// 'a b e f g h'
 ```
 
 ## Execute like a function
@@ -102,11 +109,12 @@ $`a b ${['c', 'd']} ${{ e: true, f: false }} ${true && 'g'}`;
 // or
 $('a b', ['c', 'd'], { e: true, f: false }, true && 'g');
 
-/* 'a b c d e g' */
+// 'a b c d e g'
 ```
 
 # Related
 - [@master/style-element.react](https://github.com/master-co/style-element.react) - Quickly create styled React elements with conditional class names.
+- [@master/css](https://github.com/master-co/css) - A Virtual CSS language with enhanced syntax. ~13KB
 
 # Inspiration
 - [clsx](https://github.com/lukeed/clsx) - A tiny utility for constructing `className` strings conditionally.
