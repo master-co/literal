@@ -11,7 +11,7 @@
 <p align="center">
 <!-- badges.map((badge) => `\n[![${badge.alt}](${badge.src})](${badge.href})`).join('&nbsp;')-->
 
-[![MIT License](https://flat.badgen.net/github/license/master-co/literal?color=yellow)](https://github.com/master-co/css/blob/main/LICENSE)
+[![MIT License](https://flat.badgen.net/github/license/master-co/literal?color=yellow)](https://github.com/master-co/literal/blob/main/LICENSE)
 [![Latest Release](https://flat.badgen.net/npm/v/@master/literal?icon=npm&label&color=yellow)](https://www.npmjs.com/package/@master/literal)
 [![Bundle Size](https://flat.badgen.net/bundlephobia/minzip/@master/literal?icon=packagephobia&label&color=yellow)](https://bundlephobia.com/package/@master/literal 'gzip bundle size (including dependencies)')
 [![Package Size](https://flat.badgen.net/badgesize/brotli/https://cdn.jsdelivr.net/npm/@master/literal?icon=jsdelivr&label&color=yellow)](https://unpkg.com/@master/literal 'brotli package size (without dependencies)')
